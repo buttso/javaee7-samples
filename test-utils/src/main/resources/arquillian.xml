@@ -14,5 +14,18 @@
             <property name="serverConfig">standalone-full.xml</property>
         </configuration>
     </container>
-
+    
+    <container qualifier="weblogic" default="true">
+        <configuration>
+            <property name="wlHome">/tmp/wls12210_latest/wlserver</property>
+            <!--
+            <property name="wlsHome">/tmp/wls12210_latest/wlserver</property>            
+            -->
+            <property name="adminUrl">t3://localhost:7001</property>
+            <property name="adminUserName">weblogic</property>
+            <property name="adminPassword">welcome1</property>
+            <property name="target">AdminServer</property>
+        </configuration>
+    </container>
+    
 </arquillian>

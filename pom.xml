@@ -856,6 +856,26 @@
                 </dependency>
             </dependencies>
         </profile>
+        <profile>
+            <id>weblogic-remote-arquillian</id>
+            <dependencies>
+                <dependency>            
+                    <groupId>com.oracle.weblogic</groupId>
+                    <artifactId>weblogic-server-pom</artifactId>
+                    <version>12.2.1-0-0</version>
+                    <type>pom</type>
+                    <scope>test</scope>
+                </dependency>            
+                <dependency>
+                    <groupId>org.jboss.arquillian.container</groupId>
+                    <artifactId>arquillian-wls-remote-12.1.2</artifactId>
+                    <version>1.0.0.Alpha3</version>
+                    <scope>test</scope>
+                </dependency>                
+            </dependencies>     
+        </profile>
+        
+        
 
         <!-- Browser profiles. Used for UI testing -->
         <profile>
